@@ -6,59 +6,79 @@ body {
     overflow-x: hidden;
 }
 
+
 * {
     margin: 0;
     padding: 0;
 }
 
-.nav-inicio {
-    background-color: white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: relative;
-    height: auto;
-    min-height: 90px;
-    z-index: 1;
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
-
-.navdiv {
+header .navbar{
+    background-color: #239B56 !important;
+}
+header .navbar .navbar-brand {
     display: flex;
-    flex-direction: row;
-    padding: 10px 0px;
-    justify-content: space-around;
     align-items: center;
+    row-gap: 16px;
+}
+header .navbar img {
+    width: unset;
+    height: 50px;
+}
+a.navlink{
+    font-size: 13px;
+}
+a.nav-link, .nav-link-active{
+    font-size: 20px;
+    color: aliceblue;
+  }
+.navbar-brand img{
+    width: 13vh;
+    height: auto;
+    margin-left: 5vh;
+}
+header .navbar span {
+    font-weight: 600;
 }
 
-.navdiv ul {
-    list-style: none;
-    display: flex;
+@media (max-width: 1000px){
+    div.offcanvas{
+        background-color: #239B56;
+        
+    }
+    .imagen-tipo{
+        height: 125px;
+        width: 150px;
+    }
+    a.nav-link, .nav-link-active{
+        font-size: 20px;
+        color: aliceblue;
+    }
+    header .navbar img{
+        margin-left: 16px;
+    }
 }
 
-.navdiv ul li {
-    list-style: none;
+@media (max-width: 480px){
+    .imagen-tipo{
+        height: 100px;
+        width: 120px;
+    }
+    div.offcanvas{
+        background-color: #239B56;
+    }
+    a.nav-link, .nav-link-active{
+    font-size: 20px;
+    color: aliceblue;
+    }
 }
 
-.navdiv ul li a {
-    text-decoration: none;
-    color: #4fae1e;
-    font-weight: 500;
-    font-size: 15px;
-    padding: 12px 20px;
-    border-radius: 20px;
-}
 
-.navdiv ul li a:hover {
-    background-color: #f7f7f7;
-    transition: 150ms;
-}
-
-.navdiv ul li a:active {
-    background-color: #ebebeb;
-}
-
-.activo {
-    background-color: #ebebeb;
-    border: #80EA75 1px solid;
-}
 
 .main-inicio {
     display: flex;
@@ -67,11 +87,10 @@ body {
 
 .seccion-inicio {
     background-color: #F3F3F3;
-    height: 520px;
-    width: 800px;
+    width: 900px;
     margin: 35px 0px;
     border-radius: 20px;
-    padding: 40px 80px;
+    padding: 30px;
 }
 
 .seccion-inicio div ul {
@@ -230,19 +249,10 @@ label {
         font-size: 20px !important;
     }
 
-    .seccion-propuesta {
-        width: 270px !important;
-        height: 660px !important;
-    }
 
-    .seccion-avances p {
-        padding: 0px !important;
-        font-size: 20px !important;
-    }
-
+    
     .seccion-avances {
-        width: 270px !important;
-        height: 925px !important;
+        width: 500px !important;
     }
       p {
         padding: 0px !important;
@@ -250,7 +260,7 @@ label {
     }
 
     .seccion-avances2 {
-        width: 270px !important;
+        width: 500px !important;
 
     }
 
@@ -291,8 +301,7 @@ label {
 
 .seccion-propuesta {
     background-color: #F3F3F3;
-    height: 520px;
-    width: 800px;
+    width: 1000px;
     margin: 35px 0px;
     border-radius: 20px;
     padding: 40px 80px;
@@ -325,7 +334,6 @@ label {
 
 .seccion-avances {
     background-color: #F3F3F3;
-    height: 440px;
     width: 800px;
     margin: 35px 0px;
     border-radius: 20px;
@@ -349,7 +357,7 @@ label {
 
 .seccion-avances2 {
     background-color: #F3F3F3;
-    width: 900px;
+    width: 1100px;
     margin: 35px 0px;
     border-radius: 20px;
     padding: 40px 80px;
@@ -528,7 +536,6 @@ footer div {
 
 .seccion-inicio2 {
     background-color: #F3F3F3;
-    height: 450px;
     width: 800px;
     margin: 35px 0px;
     border-radius: 20px;
@@ -546,7 +553,7 @@ footer div {
     border-radius: 30px;
     color: white;
     text-align: center;
-    width: 30px;
+    width: 100px;
 }
 
 .texto-boton a:hover {
