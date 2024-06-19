@@ -131,7 +131,12 @@ input {
 label {
     display: none;
 }
-
+@media (max-width: 550px){
+    footer div{
+        flex-wrap: wrap;
+        gap: 10px !important;
+    }
+}
 @media (max-width: 1130px) {
     .logo_avances_reciclaje{
         padding-left: 0;
